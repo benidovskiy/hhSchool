@@ -53,20 +53,20 @@ def eff_median(array_1, array_2):
 # print(simple_median(arr_1, arr_2))
 # print(eff_median(arr_1, arr_2))
 
-# a = sorted(nprnd.randint(0, 1000, 4))
-a = [102, 236, 404, 753]
-# b = sorted(nprnd.randint(0, 1000, 4))
-b = [201, 306, 320, 912]
+a = sorted(nprnd.randint(0, 10000, 10000))
+# a = [102, 236, 404, 753]
+b = sorted(nprnd.randint(0, 10000, 10000))
+# b = [201, 306, 320, 912]
 
-print(a)
-print(b)
+# print(a)
+# print(b)
 
-print(simple_median_statistics(a, b))
-print(simple_median(a, b))
-print(eff_median(a, b))
+# print(simple_median_statistics(a, b))
+# print(simple_median(a, b))
+# print(eff_median(a, b))
 
 
-# print(timeit.timeit("simple_median_statistics(a, b)", number=1000,
-#                     setup="from __main__ import simple_median_statistics, a, b"))
-# print(timeit.timeit("simple_median(a, b)", number=1000, setup="from __main__ import simple_median, a, b"))
-# print(timeit.timeit("eff_median(a, b)", number=1000, setup="from __main__ import eff_median, a, b"))
+print(timeit.timeit("simple_median_statistics(a, b)", number=1000,
+                    setup="from __main__ import simple_median_statistics, a, b"))
+print(timeit.timeit("simple_median(a, b)", number=1000, setup="from __main__ import simple_median, a, b"))
+print(timeit.timeit("eff_median(a, b)", number=1000, setup="from __main__ import eff_median, a, b"))
