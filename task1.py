@@ -43,7 +43,7 @@ a = sorted(nprnd.randint(0, 1000, 10000))
 b = sorted(nprnd.randint(0, 1000, 10000))
 
 
-print(timeit.timeit("simple_median_statistics(a,b)", number=10000,
+print(timeit.timeit("simple_median_statistics(a,b)", number=1000,
                     setup="from __main__ import simple_median_statistics, a, b"))
 print(timeit.timeit("simple_median(a, b)", number=1000, setup="from __main__ import simple_median, a, b"))
 print(timeit.timeit("eff_median(a, b)", number=1000, setup="from __main__ import eff_median, a, b"))
