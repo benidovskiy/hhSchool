@@ -30,6 +30,7 @@ def eff_median(array_1, array_2):
             i_2 += 1
     return 0.5 * (array_1[i_1] + array_2[i_2])
 
+# Uncomment to use input from keyboard
 # arr_1 = [int(x) for x in input("Input first array: ").split()]
 # arr_2 = [int(x) for x in input("Input second array: ").split()]
 
