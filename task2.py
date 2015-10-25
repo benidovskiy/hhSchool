@@ -1,6 +1,7 @@
 __author__ = 'EnDoR'
 import itertools
 
+
 def infinite_sequence():
     for number in itertools.count(1):
         string_number = str(number)
